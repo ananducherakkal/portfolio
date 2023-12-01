@@ -2,26 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+    --primary-50: 255 207 35;
+    --bg-30: 255 249 237;
+    --bg-80: 36 37 41;
+    --border-50: 46 47 51;
+    --border-30: 127 127 127;
+    --border-10: 216 216 216;
+    --gray-80: 36 37 41;
+    --gray-70: 54 55 62;
+    --gray-60: 73 73 73;
+    --gray-40: 150 140 136;
+    --gray-30: 220 220 221;
+    --gray-10: 255 249 237;
+    --text: 43 43 43;
+    --text-secondary: 73 73 73;
+    --text-light: 255 249 237;
+    --text-light-secondary: 150 140 136;
+    /* shadcn */
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    --background: var(--bg-50);
+    --foreground: var(--primary-50);
+
+    --card: var(--bg-50);
+    --card-foreground: var(--primary-50);
+
+    --popover: var(--bg-50);
+    --popover-foreground: var(--primary-50);
+
+    --primary: var(--primary-50);
+    --primary-foreground: var(--gray-80);
+
+    --secondary: var(--gray-10);
+    --secondary-foreground: var(--gray-80);
+
+    --muted: var(--primary-50);
+    --muted-foreground: var(--gray-80);
+
+    --accent: var(--primary-50);
+    --accent-foreground: var(--gray-80);
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: var(--border-50);
+    --input: var(--bg-50);
+    --ring: var(--primary-50);
+
+    --radius: 0.5rem;
+  }
+
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+  }
+
+  * {
+    @apply border-border;
+    /* @apply font-inter; */
+  }
+
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    @apply bg-background-light text-text;
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+  }
+
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    /* background: var(--muted-background); */
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--primary-50) / 20);
+    border-radius: 2px;
+  }
 }
