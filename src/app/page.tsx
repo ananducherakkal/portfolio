@@ -1,6 +1,7 @@
 "use client";
 import CompanySection from "@/components/home/companySection";
 import ProfileSection from "@/components/home/profileSection";
+import SkillSection from "@/components/home/skillSection";
 import { useRef } from "react";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
     <main className="w-full flex flex-col flex-1 min-h-screen mx-auto">
       <ProfileSection onScroll={handleScrollDown} />
       <CompanySection ref={ref} />
+      <SkillSection />
     </main>
   );
 }
