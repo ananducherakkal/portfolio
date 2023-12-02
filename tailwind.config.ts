@@ -27,8 +27,7 @@ const config: Config = {
           foreground: "rgb(var(--text) / <alpha-value>)",
         },
         background: {
-          DEFAULT: "rgb(var(--bg-80) / <alpha-value>)",
-          light: "rgb(var(--bg-30) / <alpha-value>)",
+          DEFAULT: "rgb(var(--bg-50) / <alpha-value>)",
         },
         border: {
           DEFAULT: "rgb(var(--border-50) / <alpha-value>)",
@@ -46,11 +45,8 @@ const config: Config = {
         },
         text: {
           DEFAULT: "rgb(var(--text) / <alpha-value>)",
-          secondary: "rgb(var(--text-secondary) / <alpha-value>)",
-          light: {
-            DEFAULT: "rgb(var(--text-light) / <alpha-value>)",
-            secondary: "rgb(var(--text-light-secondary) / <alpha-value>)",
-          },
+          60: "rgb(var(--text-60) / <alpha-value>)",
+          70: "rgb(var(--text-70) / <alpha-value>)",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",

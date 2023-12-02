@@ -4,22 +4,21 @@
 
 @layer base {
   :root {
-    --primary-50: 255 207 35;
-    --bg-30: 255 249 237;
-    --bg-80: 36 37 41;
+    --primary-50: 7 92 0;
+    --primary-30: 67 133 61;
+    --bg-50: 21 21 21;
     --border-50: 46 47 51;
     --border-30: 127 127 127;
     --border-10: 216 216 216;
-    --gray-80: 36 37 41;
+    --gray-80: 21 21 21;
     --gray-70: 54 55 62;
-    --gray-60: 73 73 73;
-    --gray-40: 150 140 136;
-    --gray-30: 220 220 221;
-    --gray-10: 255 249 237;
-    --text: 43 43 43;
-    --text-secondary: 73 73 73;
-    --text-light: 255 249 237;
-    --text-light-secondary: 150 140 136;
+    --gray-60: 49 49 49;
+    --gray-40: 115 115 115;
+    --gray-20: 219 219 219;
+    --gray-10: 242 242 242;
+    --text: var(--gray-10);
+    --text-60: var(--gray-20);
+    --text-70: var(--gray-40);
     /* shadcn */
 
     --background: var(--bg-50);
@@ -69,7 +68,7 @@
   }
 
   body {
-    @apply bg-background-light text-text;
+    @apply bg-background text-text;
     width: 100%;
     height: 100vh;
     font-size: 16px;
