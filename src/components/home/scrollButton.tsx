@@ -3,7 +3,8 @@ import Button from "../ui/button";
 import DoubleDownIcon from "../icon/doubleDownIcon";
 import { motion } from "framer-motion";
 
-interface IScrollButton {}
+export interface IScrollButton
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
 
 const shakeVariants = {
   initial: { x: 0 },
@@ -19,13 +20,17 @@ function ScrollButton(props: IScrollButton) {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setKey((prevKey) => prevKey + 1);
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <Button variant="transparent" className="w-fit flex items-center">
+    <Button
+      variant="transparent"
+      className="w-fit flex items-center"
+      {...props}
+    >
       <div className="mr-2">Scroll down</div>
       <motion.div
         key={key}

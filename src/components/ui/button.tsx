@@ -16,7 +16,7 @@ const buttonVariants = {
       "border-none bg-transparent text-text-70 hover:text-text-70/60 active:text-text-70/80",
   },
   size: {
-    default: "h-14 text-base px-4 py-2 font-medium",
+    default: "h-8 text-base px-4 font-medium",
     sm: "h-6 px-3 min-w-[48px] rounded-xl text-xs",
   },
 };

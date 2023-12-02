@@ -6,7 +6,13 @@ import ScrollButton from "./scrollButton";
 import { useScroll, useTransform } from "framer-motion";
 import { motion } from "framer-motion";
 
-function ProfileSection() {
+interface IProfileSection {
+  onScroll: () => any;
+}
+
+function ProfileSection(props: IProfileSection) {
+  const { onScroll } = props;
+
   const targetRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -41,7 +47,7 @@ function ProfileSection() {
           <div className="text-7xl text-text font-medium">
             <motion.span
               initial={{ color: "#f2f2f2" }}
-              animate={{ color: "#1e3b1b" }}
+              animate={{ color: "#e0b700" }}
               transition={{ duration: 0.5, delay: 2 }}
             >
               Anandu
@@ -64,7 +70,7 @@ function ProfileSection() {
           <BackgroundPattern className="w-full" />
         </motion.div>
       </div>
-      <ScrollButton />
+      <ScrollButton onClick={onScroll} />
       <Logo className="text-gray-60 w-1/2 -z-10 absolute top-2/3 right-0 transform -translate-y-1/2 translate-x-1/4" />
     </div>
   );
