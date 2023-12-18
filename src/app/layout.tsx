@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/utils/shadcn";
+import Header from "@/components/ui/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +20,15 @@ export default function RootLayout(props: IRootLayout) {
 
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={cn(
+          inter.className,
+          "w-full h-full text-base m-0 bg-background text-text relative"
+        )}
+      >
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

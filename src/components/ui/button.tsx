@@ -5,7 +5,7 @@ const buttonVariants = {
   default: "",
   variant: {
     default:
-      "bg-primary text-text border-2 border-primary hover:bg-primary/80 hover:border-primary/80 active:bg-transparent active:text-primary rounded-md",
+      "bg-primary text-text border-2 border-primary hover:bg-primary/80 hover:border-primary/80 active:bg-transparent active:text-primary rounded-lg",
     secondary:
       "bg-gray-70 text-text-light-secondary border-2 border-gray-70 hover:bg-gray-70/80 hover:border-gray-70/80 active:bg-transparent active:text-gray-70 rounded-md",
     outline:
@@ -16,8 +16,9 @@ const buttonVariants = {
       "border-none bg-transparent text-text-70 hover:text-text-70/60 active:text-text-70/80",
   },
   size: {
-    default: "h-8 text-base px-4 font-medium",
     sm: "h-6 px-3 min-w-[48px] rounded-xl text-xs",
+    default: "h-10 text-md px-4 font-medium rounded-lg",
+    md: "h-12 text-md px-4 font-medium rounded-lg",
   },
 };
 
