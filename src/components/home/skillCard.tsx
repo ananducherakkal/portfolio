@@ -2,25 +2,25 @@ import Image from "next/image";
 import React from "react";
 
 interface ISkillCard {
-  name: string;
+  label: string;
   imageUrl: string;
 }
 
 function SkillCard(props: ISkillCard) {
-  const { name, imageUrl } = props;
+  const { label, imageUrl } = props;
 
   return (
-    <div className="col-span-2 w-40 h-48 bg-gray-10/10 rounded-lg overflow-hidden flex flex-col items-center justify-center p-4">
-      <div className="w-20 h-20 rounded-md overflow-hidden">
+    <div className="w-20 h-24 flex flex-col items-center">
+      <div className="w-16 h-16 rounded-md overflow-hidden">
         <Image
           src={imageUrl}
-          width="150"
-          height="150"
+          width="64"
+          height="64"
           className="object-contain w-full h-full"
           alt="grpah-image"
         />
       </div>
-      <div className="mt-3 font-semibold">{name}</div>
+      <div className="mt-auto font-medium">{label}</div>
     </div>
   );
 }
