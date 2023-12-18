@@ -4,52 +4,49 @@
 
 @layer base {
   :root {
-    --primary-50: 224 183 0;
-    --primary-30: 224 183 0;
-    --bg-50: 21 21 21;
-    --border-50: 46 47 51;
-    --border-30: 127 127 127;
-    --border-10: 216 216 216;
-    --gray-80: 21 21 21;
-    --gray-70: 54 55 62;
-    --gray-60: 49 49 49;
-    --gray-40: 115 115 115;
-    --gray-20: 219 219 219;
+    --primary-40: 255 218 86;
+    --primary-50: 255 210 50;
+    --primary-60: 255 205 29;
     --gray-10: 242 242 242;
-    --text: var(--gray-10);
-    --text-60: var(--gray-20);
-    --text-70: var(--gray-40);
+    --gray-20: 229 229 229;
+    --gray-30: 199 199 199;
+    --gray-40: 138 138 138;
+    --gray-50: 94 94 94;
+    --gray-60: 49 49 49;
+    --gray-70: 43 43 43;
+    --gray-80: 31 31 31;
+    --gray-90: 21 21 21;
     /* shadcn */
 
-    --background: var(--bg-50);
+    --background: var(--gray-10);
     --foreground: var(--primary-50);
-
-    --card: var(--bg-50);
+    --card: var(--gray-10);
     --card-foreground: var(--primary-50);
-
-    --popover: var(--bg-50);
+    --popover: var(--gray-10);
     --popover-foreground: var(--primary-50);
-
     --primary: var(--primary-50);
     --primary-foreground: var(--gray-80);
-
     --secondary: var(--gray-10);
     --secondary-foreground: var(--gray-80);
-
     --muted: var(--primary-50);
     --muted-foreground: var(--gray-80);
-
     --accent: var(--primary-50);
     --accent-foreground: var(--gray-80);
-
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-
     --border: var(--border-50);
     --input: var(--bg-50);
     --ring: var(--primary-50);
-
     --radius: 0.5rem;
+    --text: var(--gray-90);
+  }
+
+  .dark {
+    --background: var(--gray-90);
+    --card: var(--gray-90);
+    --popover: var(--gray-90);
+    --secondary: var(--gray-90);
+    --text: var(--gray-10);
   }
 
   :root {

@@ -20,33 +20,34 @@ const config: Config = {
       colors: {
         primary: {
           DEFAULT: "rgb(var(--primary-50) / <alpha-value>)",
-          foreground: "rgb(var(--text) / <alpha-value>)",
+          40: "rgb(var(--primary-40) / <alpha-value>)",
+          50: "rgb(var(--primary-50) / <alpha-value>)",
+          60: "rgb(var(--primary-60) / <alpha-value>)",
+          foreground: "rgb(var(--gray-90) / <alpha-value>)",
         },
         secondary: {
           DEFAULT: "rgb(var(--gray-60) / <alpha-value>)",
-          foreground: "rgb(var(--text) / <alpha-value>)",
+          foreground: "rgb(var(--gray-90) / <alpha-value>)",
         },
         background: {
-          DEFAULT: "rgb(var(--bg-50) / <alpha-value>)",
+          DEFAULT: "rgb(var(--background) / <alpha-value>)",
         },
         border: {
-          DEFAULT: "rgb(var(--border-50) / <alpha-value>)",
-          50: "rgb(var(--border-50) / <alpha-value>)",
-          30: "rgb(var(--border-30) / <alpha-value>)",
-          10: "rgb(var(--border-10) / <alpha-value>)",
+          DEFAULT: "rgb(var(--gray-50) / <alpha-value>)",
         },
         gray: {
           10: "rgb(var(--gray-10) / <alpha-value>)",
           20: "rgb(var(--gray-20) / <alpha-value>)",
+          30: "rgb(var(--gray-30) / <alpha-value>)",
           40: "rgb(var(--gray-40) / <alpha-value>)",
+          50: "rgb(var(--gray-50) / <alpha-value>)",
           60: "rgb(var(--gray-60) / <alpha-value>)",
           70: "rgb(var(--gray-70) / <alpha-value>)",
           80: "rgb(var(--gray-80) / <alpha-value>)",
+          90: "rgb(var(--gray-90) / <alpha-value>)",
         },
         text: {
           DEFAULT: "rgb(var(--text) / <alpha-value>)",
-          60: "rgb(var(--text-60) / <alpha-value>)",
-          70: "rgb(var(--text-70) / <alpha-value>)",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
