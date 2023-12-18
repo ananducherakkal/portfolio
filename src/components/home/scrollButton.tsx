@@ -28,7 +28,7 @@ function ScrollButton(props: IScrollButton) {
   return (
     <Button
       variant="transparent"
-      className="w-fit flex items-center"
+      className="w-fit flex items-center text-lg text-gray-40 dark:text-gray-70"
       {...props}
     >
       <div className="mr-2">Scroll down</div>
@@ -39,7 +39,7 @@ function ScrollButton(props: IScrollButton) {
         animate="shake"
         whileHover="shake"
       >
-        <DoubleDownIcon />
+        <DoubleDownIcon className="w-6 h-6" />
       </motion.div>
     </Button>
   );

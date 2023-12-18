@@ -3,7 +3,7 @@ import Button from "./button";
 
 function Header() {
   return (
-    <nav className="h-24 w-full py-4 px-8 flex justify-end items-center space-x-4 fixed top-0 left-0 z-40">
+    <nav className="h-24 w-full py-4 px-8 hidden md:flex justify-end items-center space-x-4 fixed top-0 left-0 z-40">
       <Button
         variant="transparent"
         className="text-lg text-gray-30 hover:text-gray-40 dark:text-gray-60 dark:hover:text-gray-50"
