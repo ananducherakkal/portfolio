@@ -1,4 +1,5 @@
 "use client";
+import ExperienceSection from "@/components/home/experienceSection";
 import ProfileSection from "@/components/home/profileSection";
 import SkillSection from "@/components/home/skillSection";
 import { useRef } from "react";
@@ -19,6 +20,7 @@ export default function Home() {
     <main className="w-full flex flex-col flex-1 min-h-screen mx-auto">
       <ProfileSection onScroll={handleScrollDown} />
       <SkillSection />
+      <ExperienceSection />
     </main>
   );
 }

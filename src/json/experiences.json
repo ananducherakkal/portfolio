@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "/images/marktine-logo.png",
+    "title": "Full-Stack Developer",
+    "description": [
+      "sdfsdfsdff sdfsdf sdfsdf dsf dsfsdfsdf dsfsdfsd fsdfsdf",
+      "sdfsdfsdff sdfsdf sdfsdf dsf dsfsdfsdf dsfsdfsd fsdfsdf",
+      "sdfsdfsdff sdfsdf sdfsdf dsf dsfsdfsdf dsfsdfsd fsdfsdf"
+    ],
+    "duration": "2022 Nov - 2023 Sep"
+  },
+  {
+    "id": 2,
+    "imageUrl": "/images/marktine-logo.png",
+    "title": "Full-Stack Developer",
+    "description": [
+      "sdfsdfsdff sdfsdf sdfsdf dsf dsfsdfsdf dsfsdfsd fsdfsdf",
+      "sdfsdfsdff sdfsdf sdfsdf dsf dsfsdfsdf dsfsdfsd fsdfsdf",
+      "sdfsdfsdff sdfsdf sdfsdf dsf dsfsdfsdf dsfsdfsd fsdfsdf"
+    ],
+    "duration": "2022 Nov - 2023 Sep"
+  },
+  {
+    "id": 3,
+    "imageUrl": "/images/marktine-logo.png",
+    "title": "Full-Stack Developer",
+    "description": [
+      "sdfsdfsdff sdfsdf sdfsdf dsf dsfsdfsdf dsfsdfsd fsdfsdf",
+      "sdfsdfsdff sdfsdf sdfsdf dsf dsfsdfsdf dsfsdfsd fsdfsdf",
+      "sdfsdfsdff sdfsdf sdfsdf dsf dsfsdfsdf dsfsdfsd fsdfsdf"
+    ],
+    "duration": "2022 Nov - 2023 Sep"
+  }
+]
