@@ -19,7 +19,7 @@ function SkillCardSection() {
       setCurrentPage((prevPage) =>
         prevPage >= skills.length - 1 ? 0 : prevPage + 1
       );
-    }, 10000);
+    }, 5000);
 
     return () => clearInterval(intervalId);
   }, [skills]);
