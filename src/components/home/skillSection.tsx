@@ -7,7 +7,7 @@ const SkillSection = React.forwardRef<HTMLDivElement, ISkillSection>(
   (props, ref) => {
     return (
       <div
-        className="w-full p-20 flex flex-col justify-center items-center bg-gray-20 dark:bg-gray-80"
+        className="w-full p-10 md:p-20 flex flex-col justify-center items-center bg-gray-20 dark:bg-gray-80"
         ref={ref}
       >
         <SectionHeader>Skills</SectionHeader>

@@ -24,7 +24,7 @@ const ProfileSection = React.forwardRef<HTMLDivElement, IProfileSection>(
 
     return (
       <div
-        className="w-full h-screen flex flex-col p-14 md:p-24 md:pb-12 relative overflow-hidden"
+        className="w-full h-screen flex flex-col p-8 sm:p-14 md:p-24 md:pb-12 relative overflow-hidden"
         ref={ref}
       >
         <div className="w-4/5 flex flex-col my-auto relative py-10">

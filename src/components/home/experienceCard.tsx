@@ -14,7 +14,7 @@ function ExperienceCard(props: IExperienceCardProps) {
   const { data } = props;
 
   return (
-    <div className="w-full py-10 px-9 bg-gray-20 dark:bg-gray-80 rounded-lg text-gray-50 flex flex-col md:grid md:grid-cols-9 gap-5">
+    <div className="w-full py-10 px-9 bg-gray-20 dark:bg-gray-80 rounded-lg text-gray-50 flex flex-col md:grid md:grid-cols-9 gap-10">
       <div className="w-full h-full col-span-3 p-4 row-start-1">
         <Image
           src={data.imageUrl}

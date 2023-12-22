@@ -11,7 +11,7 @@ function SkillCard(props: ISkillCard) {
 
   return (
     <div className="w-20 h-24 flex flex-col items-center">
-      <div className="w-16 h-16 rounded-md overflow-hidden">
+      <div className="w-12 h-16 rounded-md overflow-hidden">
         <Image
           src={imageUrl}
           width="64"

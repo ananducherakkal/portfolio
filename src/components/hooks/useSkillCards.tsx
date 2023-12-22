@@ -10,11 +10,11 @@ const useSkillCards = () => {
     const { innerWidth: width } = window;
 
     switch (true) {
-      case width < 500:
+      case width < 640:
         setSkills(createSubarrays(skillsJson, 6));
         setWidth((6 / 2) * 104 - 24);
         break;
-      case width < 1000:
+      case width < 768:
         setSkills(createSubarrays(skillsJson, 10));
         setWidth((10 / 2) * 104 - 24);
         break;

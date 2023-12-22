@@ -37,7 +37,7 @@ function SkillCardSection() {
           {skills?.map((skillSection, index) => (
             <div
               key={index}
-              className="flex-shrink-0 grid grid-cols-7 gap-6 mx-auto mt-10"
+              className="flex-shrink-0 grid grid-cols-3 sm:grid-cols-5 md:grid-cols-7 gap-3 mx-auto mt-10"
               style={{ width: `${width}px` }}
             >
               {skillSection.map((skill) => (
