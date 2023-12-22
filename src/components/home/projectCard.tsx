@@ -3,25 +3,41 @@ import Image from "next/image";
 import React from "react";
 import OutlineTag from "../ui/outlineTag";
 import Button from "../ui/button";
+import ArrowSquareIcon from "../icon/arrowSquareIcon";
+import GithubIcon from "../icon/githubIcon";
 
 interface IProjectCardProps {
   isRightImage?: boolean;
+  className?: string;
+  data: {
+    imageUrl: string;
+    title: string;
+    description: string;
+    tags: Array<string>;
+    repoUrl: string;
+    hostedUrl: string;
+  };
 }
 
 function ProjectCard(props: IProjectCardProps) {
-  const { isRightImage = false } = props;
+  const { isRightImage = false, className, data } = props;
 
   return (
-    <div className="w-full min-h-[419px] border bg-gray-10 dark:bg-gray-80 border-gray-30 rounded-lg text-gray-60 grid grid-cols-1 md:grid-cols-2">
+    <div
+      className={cn(
+        "w-full min-h-[419px] border bg-gray-10 dark:bg-gray-90 border-gray-30 dark:border-gray-70 rounded-lg text-gray-60 grid grid-cols-1 md:grid-cols-2 overflow-hidden",
+        className
+      )}
+    >
       <div
         className={cn(
-          "w-full bg-gray-30 row-start-1 p-10 flex justify-center items-center",
+          "w-full bg-gray-30 dark:bg-gray-70 row-start-1 p-10 flex justify-center items-center",
           isRightImage ? "col-start-2" : "col-start-1"
         )}
       >
         <div className="w-full h-full max-w-[380px] max-h-96 rounded-lg shadow-md overflow-hidden">
           <Image
-            src="/images/dashboard-website.png"
+            src={data.imageUrl}
             width="380"
             height="400"
             className="object-cover w-full h-full"
@@ -29,20 +45,34 @@ function ProjectCard(props: IProjectCardProps) {
           />
         </div>
       </div>
-      <div className="w-full row-start-2 md:row-start-1 py-10 px-12">
-        <div className="text-lg font-bold">Dashoboard</div>
-        <div className="text-base text-gray-50 mt-5">
-          sdfsdf sdf sdf sd f sdf sd f sdf sdf sd f sdf sd f sdf
+      <div className="w-full row-start-2 md:row-start-1 py-10 px-12 dark:text-gray-30">
+        <div className="text-lg font-bold">{data.title}</div>
+        <div className="text-base text-gray-50 dark:text-gray-40 mt-5">
+          {data.description}
         </div>
         <div className="flex flex-wrap mt-5">
-          <OutlineTag className="mb-2 mr-4">Next.js</OutlineTag>
-          <OutlineTag className="mb-2 mr-4">Next.js</OutlineTag>
-          <OutlineTag className="mb-2 mr-4">Next.js</OutlineTag>
-          <OutlineTag className="mb-2 mr-4">Next.js</OutlineTag>
-          <OutlineTag className="mb-2 mr-4">Next.js</OutlineTag>
+          {data.tags.map((tag, index) => (
+            <OutlineTag key={index} className="mb-2 mr-4">
+              {tag}
+            </OutlineTag>
+          ))}
         </div>
-        <div className="flex space-x-2">
-          <Button>show</Button>
+        <div className="flex space-x-5 mt-14">
+          <Button className="flex items-center justify-center">
+            <div>Open</div>
+            <div className="w-5 h-5 ml-5">
+              <ArrowSquareIcon className="w-full h-full" />
+            </div>
+          </Button>
+          <Button
+            className="flex items-center justify-center"
+            variant="secondary"
+          >
+            <div>Open</div>
+            <div className="w-5 h-5 ml-5">
+              <GithubIcon className="w-full h-full" />
+            </div>
+          </Button>
         </div>
       </div>
     </div>

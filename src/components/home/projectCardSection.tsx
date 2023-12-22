@@ -1,11 +1,17 @@
 import React from "react";
 import ProjectCard from "./projectCard";
+import projects from "@/json/projects.json";
 
 function ProjectCardSection() {
   return (
     <div className="w-full mt-20 flex flex-col space-y-10 max-w-[1080px]">
-      <ProjectCard />
-      <ProjectCard isRightImage />
+      {projects.map((project, index) => (
+        <ProjectCard
+          key={project.id}
+          data={project}
+          isRightImage={index % 2 == 0}
+        />
+      ))}
     </div>
   );
 }

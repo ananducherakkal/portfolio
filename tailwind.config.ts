@@ -94,7 +94,7 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontSize: {
-        xl: "32px",
+        xl: "24px",
         lg: "20px",
         md: "18px",
         base: "16px",

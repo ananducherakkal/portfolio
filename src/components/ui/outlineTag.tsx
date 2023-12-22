@@ -12,7 +12,7 @@ function OutlineTag(props: IOutlineTagProps) {
   return (
     <div
       className={cn(
-        "h-7 min-w-[80px] border-[3px] border-gray-40 text-gray-40 rounded-md text-sm font-medium flex justify-center items-center",
+        "h-7 min-w-[80px] border-2 border-gray-40 text-gray-40 rounded-md text-sm font-medium flex justify-center items-center",
         className
       )}
     >
