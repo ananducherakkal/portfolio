@@ -8,7 +8,7 @@ const ProjectSection = React.forwardRef<HTMLDivElement, IProjectSection>(
     return (
       <div
         ref={ref}
-        className="w-full min-h-screen p-20 flex flex-col items-center bg-gray-20 dark:bg-gray-80"
+        className="w-full min-h-screen p-10 md:p-20 flex flex-col items-center bg-gray-20 dark:bg-gray-80"
       >
         <SectionHeader>Projects</SectionHeader>
         <div className="text-md mt-4 text-gray-50 dark:text-gray-40">

@@ -1,29 +1,27 @@
 [
   {
     "id": 1,
-    "imageUrl": "/images/dashboard-website.png",
+    "imageUrl": "/images/projects/dashboard.png",
     "title": "Dashoboard using tailwind",
-    "description": "sdfsdfsdff sdfsdf sdfsdf dsf dsfsdfsdf dsfsdfsd fsdfsdf",
-    "tags": ["Next.js", "React.js"],
-    "repoUrl": "https://google.com",
-    "hostedUrl": "https://google.com"
+    "description": "",
+    "tags": ["Next.js", "Typescript", "Tailwind", "Shadcn", "D3"],
+    "repoUrl": "https://github.com/ananducherakkal/dashboard-tailwind",
+    "hostedUrl": "https://p-dashboard.ckkl.shop/"
   },
   {
     "id": 2,
-    "imageUrl": "/images/dashboard-website.png",
-    "title": "Dashoboard using tailwind",
-    "description": "sdfsdfsdff sdfsdf sdfsdf dsf dsfsdfsdf dsfsdfsd fsdfsdf",
-    "tags": ["Next.js", "React.js"],
-    "repoUrl": "https://google.com",
-    "hostedUrl": "https://google.com"
+    "imageUrl": "/images/projects/sheduler.png",
+    "title": "Scroll animation using Framer motion",
+    "description": "",
+    "tags": ["Next.js", "Typescript", "Tailwind", "Shadcn", "Framer Motion"],
+    "repoUrl": "https://github.com/ananducherakkal/scheduler-animation"
   },
   {
     "id": 3,
-    "imageUrl": "/images/dashboard-website.png",
-    "title": "Dashoboard using tailwind",
-    "description": "sdfsdfsdff sdfsdf sdfsdf dsf dsfsdfsdf dsfsdfsd fsdfsdf",
-    "tags": ["Next.js", "React.js"],
-    "repoUrl": "https://google.com",
-    "hostedUrl": "https://google.com"
+    "imageUrl": "/images/projects/portfolio.png",
+    "title": "Portfolio",
+    "description": "",
+    "tags": ["Next.js", "Typescript", "Tailwind", "Shadcn", "Framer Motion"],
+    "repoUrl": "https://github.com/ananducherakkal/scheduler-animation"
   }
 ]
