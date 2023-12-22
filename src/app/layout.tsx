@@ -26,7 +26,6 @@ export default function RootLayout(props: IRootLayout) {
           "w-full h-full text-base m-0 bg-background text-text relative dark"
         )}
       >
-        <Header />
         {children}
       </body>
     </html>
