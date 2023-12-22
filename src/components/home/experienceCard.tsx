@@ -14,8 +14,8 @@ function ExperienceCard(props: IExperienceCardProps) {
   const { data } = props;
 
   return (
-    <div className="w-full py-10 px-9 bg-gray-20 dark:bg-gray-80 rounded-lg text-gray-50 flex flex-col md:grid md:grid-cols-9 gap-10">
-      <div className="w-full h-full col-span-3 p-4 row-start-1">
+    <div className="w-full py-10 px-9 bg-gray-20 dark:bg-gray-80 rounded-lg text-gray-50 flex flex-col md:grid md:grid-cols-9 gap-5 lg:gap-10">
+      <div className="w-full max-w-[180px] h-fit col-span-3 row-start-1 rounded-lg overflow-hidden shadow-md">
         <Image
           src={data.imageUrl}
           width="200"
@@ -29,7 +29,7 @@ function ExperienceCard(props: IExperienceCardProps) {
       </div>
       <div className="flex-1 flex flex-col col-span-4 col-start-4 row-start-1">
         <div className="text-lg font-bold">{data.title}</div>
-        <ul className="text-base list-disc ml-4">
+        <ul className="text-base list-disc mt-6 ml-4">
           {data.description.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
