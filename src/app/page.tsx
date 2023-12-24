@@ -1,4 +1,5 @@
 "use client";
+import ContactSection from "@/components/home/contactSection";
 import ExperienceSection from "@/components/home/experienceSection";
 import ProfileSection from "@/components/home/profileSection";
 import ProjectSection from "@/components/home/projectSection";
@@ -38,6 +39,7 @@ export default function Home() {
       <SkillSection ref={skillsRef} />
       <ExperienceSection ref={experienceRef} />
       <ProjectSection ref={projectRef} />
+      <ContactSection />
     </main>
   );
 }
