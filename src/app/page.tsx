@@ -12,6 +12,7 @@ export default function Home() {
   const skillsRef = useRef<HTMLDivElement | null>(null);
   const experienceRef = useRef<HTMLDivElement | null>(null);
   const projectRef = useRef<HTMLDivElement | null>(null);
+  const contactMeRef = useRef<HTMLDivElement | null>(null);
 
   const sections = [
     { id: 1, label: "Home", ref: homeRef },
@@ -30,7 +31,7 @@ export default function Home() {
 
   return (
     <main className="w-full flex flex-col flex-1 min-h-screen mx-auto">
-      <Header sections={sections} />
+      <Header sections={sections} contactMeRef={contactMeRef} />
       <ProfileSection
         onScroll={handleScrollDown}
         ref={homeRef}
@@ -39,7 +40,7 @@ export default function Home() {
       <SkillSection ref={skillsRef} />
       <ExperienceSection ref={experienceRef} />
       <ProjectSection ref={projectRef} />
-      <ContactSection />
+      <ContactSection ref={contactMeRef} />
     </main>
   );
 }

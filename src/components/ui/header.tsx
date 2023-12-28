@@ -10,10 +10,11 @@ interface IHeaderProps {
     label: string;
     ref: React.RefObject<any>;
   }>;
+  contactMeRef: React.RefObject<any>;
 }
 
 function Header(props: IHeaderProps) {
-  const { sections } = props;
+  const { sections, contactMeRef } = props;
 
   const { changeColor, hide } = useHeaderScroll();
 
@@ -45,7 +46,14 @@ function Header(props: IHeaderProps) {
           {section.label}
         </Button>
       ))}
-      <Button size="md">Contact me</Button>
+      <Button
+        size="md"
+        onClick={() => {
+          handleScrollDown(contactMeRef);
+        }}
+      >
+        Contact me
+      </Button>
     </nav>
   );
 }
