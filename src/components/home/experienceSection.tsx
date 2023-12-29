@@ -19,5 +19,6 @@ const ExperienceSection = React.forwardRef<HTMLDivElement, IExperienceSection>(
     );
   }
 );
+ExperienceSection.displayName = "ExperienceSection";
 
 export default ExperienceSection;
