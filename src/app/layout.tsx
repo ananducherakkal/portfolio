@@ -24,7 +24,7 @@ export default function RootLayout(props: IRootLayout) {
       <body
         className={cn(
           inter.className,
-          "w-full h-full text-base m-0 bg-background text-text relative"
+          "w-full h-full text-base m-0 bg-background text-text relative selection:text-gray-90 selection:bg-primary dark"
         )}
       >
         {children}

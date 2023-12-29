@@ -33,6 +33,7 @@ function ContactForm() {
     setLoading(false);
     if (success) {
       toast.success("Mail sent succesfully");
+      formik.resetForm();
     } else {
       toast.error("Mail could not be sent!");
     }
@@ -49,7 +50,7 @@ function ContactForm() {
       className="w-full flex flex-col max-w-xl mx-auto"
       onSubmit={formik.handleSubmit}
     >
-      <div className="text-gray-70 text-3xl md:text-4xl lg:text-5xl font-medium">
+      <div className="text-gray-70 dark:text-gray-30 text-3xl md:text-4xl lg:text-5xl font-medium">
         Contact Me
       </div>
       <Input
