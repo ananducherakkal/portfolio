@@ -55,6 +55,7 @@ const InputRoot = React.forwardRef<
     />
   );
 });
+InputRoot.displayName = "InputRoot";
 
 const Prefix = (props: DivProps) => {
   const { className, children } = props;
