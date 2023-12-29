@@ -1,10 +1,11 @@
 import React from "react";
-import ArrowSquareIcon from "../icon/arrowSquareIcon";
 import AtIcon from "../icon/atIcon";
 import PhoneIcon from "../icon/phoneIcon";
 import LocationIcon from "../icon/locationIcon";
 import GithubIcon from "../icon/githubIcon";
 import LinkedinIcon from "../icon/linkedinIcon";
+import Link from "next/link";
+import social from "@/json/social.json";
 
 function ContactInfo() {
   return (
@@ -31,12 +32,12 @@ function ContactInfo() {
         </div>
       </div>
       <div className="flex items-center mt-10 space-x-4 text-gray-40">
-        <div className="w-7 h-7">
+        <Link href={social.github.url} target="_blank" className="w-7 h-7">
           <GithubIcon className="w-full h-full" />
-        </div>
-        <div className="w-7 h-7">
+        </Link>
+        <Link href={social.linkedin.url} target="_blank" className="w-7 h-7">
           <LinkedinIcon className="w-full h-full" />
-        </div>
+        </Link>
       </div>
     </div>
   );

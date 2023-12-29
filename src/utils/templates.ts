@@ -1,13 +1,13 @@
-type SignupEmailTemplate = {
+type ContactMeTemplate = {
   name: string;
   email: string;
   message: string;
 };
-export const signupEmailTemplate = ({
+export const contactMeTemplate = ({
   name,
   email,
   message,
-}: SignupEmailTemplate) => {
+}: ContactMeTemplate) => {
   return `<div
     style="
       background-color: rgb(220, 255, 243);

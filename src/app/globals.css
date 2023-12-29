@@ -77,3 +77,39 @@
     border-radius: 2px;
   }
 }
+
+loading-circle {
+  position: relative;
+  animation: lc-rotate 2s linear infinite;
+}
+@keyframes lc-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+loading-circle circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  animation: lc-animate 4s linear infinite;
+}
+@keyframes lc-animate {
+  0%,
+  100% {
+    stroke-dashoffset: 440;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  50.1% {
+    stroke-dashoffset: 880;
+  }
+}

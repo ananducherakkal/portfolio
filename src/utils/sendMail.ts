@@ -1,5 +1,5 @@
 import nodemailer from "nodemailer";
-import { signupEmailTemplate } from "./templates";
+import { contactMeTemplate } from "./templates";
 
 // Configure nodemailer
 const transporter = nodemailer.createTransport({
@@ -25,13 +25,13 @@ export const sendMail = ({
   return {};
 };
 
-type sendUserSignupEmailOptions = {
+type SendContactMeMail = {
   name: string;
   email: string;
   message: string;
 };
-export const sendSignupMail = async (
-  options: sendUserSignupEmailOptions
+export const sendContactMeMail = async (
+  options: SendContactMeMail
 ): Promise<{ error?: Error }> => {
   const { name, email, message } = options;
 
@@ -42,7 +42,7 @@ export const sendSignupMail = async (
     },
     to: process.env.NEXT_PUBLIC_EMAIL_SERVICE_RECEIVER as string,
     subject: "Contact me form portfolio",
-    html: signupEmailTemplate({
+    html: contactMeTemplate({
       name: name,
       email: email,
       message: message,
