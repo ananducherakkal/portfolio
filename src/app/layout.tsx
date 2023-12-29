@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/utils/shadcn";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+import Footer from "@/components/ui/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function RootLayout(props: IRootLayout) {
         )}
       >
         {children}
+        <Footer />
         <ToastContainer />
       </body>
     </html>
