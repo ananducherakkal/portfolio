@@ -19,5 +19,6 @@ const ProjectSection = React.forwardRef<HTMLDivElement, IProjectSection>(
     );
   }
 );
+ProjectSection.displayName = "ProjectSection";
 
 export default ProjectSection;

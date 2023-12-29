@@ -19,5 +19,6 @@ const SkillSection = React.forwardRef<HTMLDivElement, ISkillSection>(
     );
   }
 );
+SkillSection.displayName = "SkillSection";
 
 export default SkillSection;

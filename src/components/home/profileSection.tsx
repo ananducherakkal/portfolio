@@ -79,5 +79,6 @@ const ProfileSection = React.forwardRef<HTMLDivElement, IProfileSection>(
     );
   }
 );
+ProfileSection.displayName = "ProfileSection";
 
 export default ProfileSection;

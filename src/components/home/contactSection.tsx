@@ -17,5 +17,6 @@ const ContactSection = React.forwardRef<HTMLDivElement, IContactSection>(
     );
   }
 );
+ContactSection.displayName = "ContactSection";
 
 export default ContactSection;
