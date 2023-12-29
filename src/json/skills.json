@@ -1,0 +1,20 @@
+[
+  { "id": 1, "label": "JavaScript", "imageUrl": "/images/js-logo.png" },
+  {
+    "id": 2,
+    "label": "Typescript",
+    "imageUrl": "/images/typescript-logo.png"
+  },
+  { "id": 3, "label": "Python", "imageUrl": "/images/python-logo.png" },
+  { "id": 4, "label": "HTML", "imageUrl": "/images/html-logo.png" },
+  { "id": 5, "label": "CSS", "imageUrl": "/images/css-logo.webp" },
+  { "id": 6, "label": "React.js", "imageUrl": "/images/react-logo.png" },
+  { "id": 7, "label": "Next.js", "imageUrl": "/images/next-logo.webp" },
+  { "id": 8, "label": "Vue.js", "imageUrl": "/images/vue-logo.png" },
+  { "id": 9, "label": "Node.js", "imageUrl": "/images/node-logo.png" },
+  { "id": 10, "label": "Express.js", "imageUrl": "/images/express-logo.webp" },
+  { "id": 11, "label": "Tailwind", "imageUrl": "/images/tailwind-logo.png" },
+  { "id": 12, "label": "MySQL", "imageUrl": "/images/mysql-logo.jpg" },
+  { "id": 13, "label": "MongoDB", "imageUrl": "/images/mongodb-logo.png" },
+  { "id": 14, "label": "Git", "imageUrl": "/images/git-logo.png" }
+]

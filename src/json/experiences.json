@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "/images/company/marktine-logo.jpeg",
+    "title": "Full-Stack Developer at Marktine Technology",
+    "description": [
+      "Led development on multiple end-to-end web projects, seamlessly integrating front-end and back-end functionalities using the XERN stackW",
+      "Designed and normalized MySQL databases, ensuring efficient data storage and retrievalW"
+    ],
+    "duration": "June 2022 - Aug 2023"
+  },
+  {
+    "id": 2,
+    "imageUrl": "/images/company/sekel-logo.png",
+    "title": "Front-End Developer at Sekel Tech",
+    "description": [
+      " Develop and maintain front-end components and features across multiple projects using Vue.js (Nuxt.js)",
+      "Work closely with designers, project managers, and the back-end team to understand project requirements and develop web applications that align with our goalsW"
+    ],
+    "duration": "May 2021 - June 2022"
+  },
+  {
+    "id": 3,
+    "imageUrl": "/images/company/dynata-logo.jpg",
+    "title": "Surevey Programmer at Dynata",
+    "description": [
+      " Developed interactive surveys using the Decipher framework, employing Python, HTML, CSS, and JavaScript to create user-friendly interfacesW",
+      " Implemented dynamic question flow logic using Python, ensuring questions adapt based on respondent inputs, enhancing survey engagementW"
+    ],
+    "duration": "Nov 2019 - May 2021"
+  }
+]
