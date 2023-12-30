@@ -16,14 +16,20 @@ function ContactInfo() {
           <div className="w-6 h-6 mr-2">
             <AtIcon className="w-full h-full" />
           </div>
-          <div>ananducherakkal.sdf@gmail.com</div>
+          <div>ananducherakkal.se@gmail.com</div>
+        </div>
+        {/* <div className="flex items-center">
+          <div className="w-6 h-6 mr-2">
+            <PhoneIcon className="w-full h-full" />
+          </div>
+          <div>+91 9871378987</div>
         </div>
         <div className="flex items-center">
           <div className="w-6 h-6 mr-2">
             <PhoneIcon className="w-full h-full" />
           </div>
           <div>+47 34234234234</div>
-        </div>
+        </div> */}
         <div className="flex items-center">
           <div className="w-6 h-6 mr-2">
             <LocationIcon className="w-full h-full" />
