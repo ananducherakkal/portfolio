@@ -4,7 +4,7 @@ import experiences from "@/json/experiences.json";
 
 function ExperienceCardSection() {
   return (
-    <div className="w-full mt-20 flex flex-col space-y-10 max-w-[900px]">
+    <div className="w-full mt-10 md:mt-20 flex flex-col space-y-10 max-w-[900px]">
       {experiences.map((experience) => (
         <ExperienceCard key={experience.id} data={experience} />
       ))}
