@@ -6,7 +6,7 @@
     "description": "",
     "tags": ["Next.js", "Typescript", "Tailwind", "Shadcn", "D3"],
     "repoUrl": "https://github.com/ananducherakkal/dashboard-tailwind",
-    "hostedUrl": "https://p-dashboard.ckkl.shop/"
+    "hostedUrl": "https://dashboard-demo.ckkl.shop/"
   },
   {
     "id": 2,
@@ -14,7 +14,8 @@
     "title": "Scroll animation using Framer motion",
     "description": "",
     "tags": ["Next.js", "Typescript", "Tailwind", "Shadcn", "Framer Motion"],
-    "repoUrl": "https://github.com/ananducherakkal/scheduler-animation"
+    "repoUrl": "https://github.com/ananducherakkal/scheduler-animation",
+    "hostedUrl": "https://scroll-animation-demo.ckkl.shop/"
   },
   {
     "id": 3,
