@@ -36,7 +36,7 @@ function ProjectCard(props: IProjectCardProps) {
           isRightImage ? "col-start-2" : "col-start-1"
         )}
       >
-        <div className="w-full h-full max-w-[380px] min-h-[200px] max-h-96 rounded-lg shadow-md overflow-hidden">
+        <div className="w-full h-fit md:h-full max-w-[380px] md:min-h-[200px] max-h-96 rounded-lg shadow-md overflow-hidden">
           <Image
             src={data.imageUrl}
             width="800"
@@ -46,7 +46,7 @@ function ProjectCard(props: IProjectCardProps) {
           />
         </div>
       </div>
-      <div className="w-full row-start-2 md:row-start-1 py-10 px-12 dark:text-gray-30">
+      <div className="w-full row-start-2 md:row-start-1 p-5 md:py-10 md:px-12 dark:text-gray-30">
         <div className="text-lg font-bold">{data.title}</div>
         <div className="text-base text-gray-50 dark:text-gray-40 mt-5">
           {data.description}
@@ -58,10 +58,10 @@ function ProjectCard(props: IProjectCardProps) {
             </OutlineTag>
           ))}
         </div>
-        <div className="flex space-x-5 mt-14">
+        <div className="flex flex-wrap mt-5 md:mt-10">
           {data.hostedUrl && (
             <Link href={data.hostedUrl} target="_blank">
-              <Button className="flex items-center justify-center">
+              <Button className="flex items-center justify-center mr-5 mt-4">
                 <div>Open</div>
                 <div className="w-5 h-5 ml-5">
                   <ArrowSquareIcon className="w-full h-full" />
@@ -72,7 +72,7 @@ function ProjectCard(props: IProjectCardProps) {
           {data.repoUrl && (
             <Link href={data.repoUrl} target="_blank">
               <Button
-                className="flex items-center justify-center"
+                className="flex items-center justify-center mt-4"
                 variant="secondary"
               >
                 <div>Repo</div>
