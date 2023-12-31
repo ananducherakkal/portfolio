@@ -8,7 +8,7 @@ const ContactSection = React.forwardRef<HTMLDivElement, IContactSection>(
   (props, ref) => {
     return (
       <div
-        className="grid grid-cols-1 md:grid-cols-2 p-10 md:px-24 md:py-16"
+        className="grid grid-cols-1 md:grid-cols-2 p-7 md:px-24 md:py-16"
         ref={ref}
       >
         <ContactForm />
