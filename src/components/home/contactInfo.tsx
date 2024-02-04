@@ -37,7 +37,7 @@ function ContactInfo() {
             <div className="w-4 md:w-6 h-4 md:h-6 mr-2">
               <LocationIcon className="w-full h-full" />
             </div>
-            <div>Trollhattan Sweden</div>
+            <div>Trollhättan, Sweden</div>
           </div>
         </div>
         <div className="flex items-center mt-5 md:mt-10 space-x-4 text-gray-40">
