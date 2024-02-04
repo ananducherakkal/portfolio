@@ -9,12 +9,21 @@
   { "id": 4, "label": "HTML", "imageUrl": "/images/html-logo.png" },
   { "id": 5, "label": "CSS", "imageUrl": "/images/css-logo.webp" },
   { "id": 6, "label": "React.js", "imageUrl": "/images/react-logo.png" },
-  { "id": 7, "label": "Next.js", "imageUrl": "/images/next-logo.webp" },
+  { "id": 7, "label": "Next.js", "imageUrl": "/images/next-logo.svg" },
   { "id": 8, "label": "Vue.js", "imageUrl": "/images/vue-logo.png" },
   { "id": 9, "label": "Node.js", "imageUrl": "/images/node-logo.png" },
   { "id": 10, "label": "Express.js", "imageUrl": "/images/express-logo.webp" },
   { "id": 11, "label": "Tailwind", "imageUrl": "/images/tailwind-logo.png" },
   { "id": 12, "label": "MySQL", "imageUrl": "/images/mysql-logo.jpg" },
   { "id": 13, "label": "MongoDB", "imageUrl": "/images/mongodb-logo.png" },
-  { "id": 14, "label": "Git", "imageUrl": "/images/git-logo.png" }
+  { "id": 14, "label": "Git", "imageUrl": "/images/git-logo.png" },
+  {
+    "id": 15,
+    "label": "Framer motion",
+    "imageUrl": "/images/framer-motion-logo.svg"
+  },
+  { "id": 16, "label": "Jest", "imageUrl": "/images/jest-logo.png" },
+  { "id": 17, "label": "MUI", "imageUrl": "/images/mui-logo.png" },
+  { "id": 18, "label": "OpenCV", "imageUrl": "/images/opencv-logo.svg" },
+  { "id": 19, "label": "Socket.io", "imageUrl": "/images/socket-logo.png" }
 ]
