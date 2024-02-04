@@ -38,8 +38,8 @@ export default function Home() {
         targetRef={homeRef}
       />
       <SkillSection ref={skillsRef} />
-      <ExperienceSection ref={experienceRef} />
       <ProjectSection ref={projectRef} />
+      <ExperienceSection ref={experienceRef} />
       <ContactSection ref={contactMeRef} />
     </main>
   );

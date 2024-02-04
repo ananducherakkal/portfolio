@@ -6,6 +6,7 @@ import Button from "../ui/button";
 import ArrowSquareIcon from "../icon/arrowSquareIcon";
 import GithubIcon from "../icon/githubIcon";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 interface IProjectCardProps {
   isRightImage?: boolean;
@@ -24,11 +25,14 @@ function ProjectCard(props: IProjectCardProps) {
   const { isRightImage = false, className, data } = props;
 
   return (
-    <div
+    <motion.div
       className={cn(
         "w-full min-h-[419px] border bg-gray-10 dark:bg-gray-90 border-gray-30 dark:border-gray-70 rounded-lg text-gray-60 flex flex-col md:grid md:grid-cols-2 overflow-hidden",
         className
       )}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 3 }}
     >
       <div
         className={cn(
@@ -84,7 +88,7 @@ function ProjectCard(props: IProjectCardProps) {
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
